@@ -193,6 +193,7 @@ button {
   color: var(--main-txt-cl);
 
   display: flex;
+  align-items: center;
   gap: 10px;
   text-align: center;
 }
@@ -221,8 +222,7 @@ button {
 
 .footer-wrapper {
   display: flex;
-  justify-content: left;
-  gap: 70px;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -277,14 +277,15 @@ button {
   color: var(--accent-txt-cl);
 }
 
+.footer-socials {
+  margin-left: 70px;
+}
+
 .footer-socials-title {
-  margin-top: 8px;
   margin-bottom: 20px;
 
   font-weight: 700;
-  font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--light-txt-cl);
@@ -332,7 +333,8 @@ button {
 
   background-color: var(--hero-bg-cl);
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
 
   padding-top: 200px;
   padding-bottom: 200px;
@@ -340,6 +342,7 @@ button {
   margin-right: auto;
 
   max-width: 1600px;
+  max-height: 600px;
 
   /* position: relative; */
 }
@@ -663,8 +666,12 @@ button {
   background: var(--team-caerd-bg-cl);
 }
 
-.portfolio-card:hover,
-.portfolio-card:focus {
+.portfolio-card-link {
+  display: block;
+}
+
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
